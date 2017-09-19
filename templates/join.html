@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/join" method="POST">
+	<div class="form-group">
+		<input class="form-control" type="text" name="name" placeholder="이름"/>
+	</div>
+	<div class="form-group">
+		<input class="form-control" type="text" name="userid" placeholder="userid"/>
+	</div>
+	<div class="form-group">
+		<input class="form-control" type="password" name="password" placeholder="password"/>
+	</div>
+	<div class="form-group">
+		<input class="form-control" type="password" name="repass" placeholder="password check"/>
+	</div>
+	<div class="form-group">
+		<input class="form-control" type="text" name="phone" placeholder="phone number"/>
+	</div>
+	<button type="submit" class="btn btn-default btn-block">Join</button>
+</form>
+
+<script>
+	$(document).ready(function(){
+		//$("span").addClass("sr-only");
+	});
+</script>
+
+{% endblock %}
